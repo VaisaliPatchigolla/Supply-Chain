@@ -1,0 +1,5 @@
+package com.demand.forecasting.repository;
+
+public class ProductRepository {
+
+}

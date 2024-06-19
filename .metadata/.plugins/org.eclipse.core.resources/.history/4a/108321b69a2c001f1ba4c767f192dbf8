@@ -1,0 +1,5 @@
+package com.supplier.client;
+
+public class DemandForecastingClient {
+
+}

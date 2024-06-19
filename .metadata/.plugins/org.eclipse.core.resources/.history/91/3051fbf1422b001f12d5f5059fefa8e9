@@ -1,0 +1,16 @@
+package com.logistics.model;
+
+@Entity
+public class Shipment {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+    private String supplier;
+    private String warehouse;
+    private String customer;
+    private String status;
+
+    // Constructors, getters and setters
+}
+

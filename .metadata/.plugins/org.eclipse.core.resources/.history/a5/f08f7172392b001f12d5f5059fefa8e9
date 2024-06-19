@@ -1,0 +1,5 @@
+package com.inventory.optimize.model;
+
+public class Inventory {
+
+}

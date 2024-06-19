@@ -1,0 +1,5 @@
+package com.demand.forecasting.service;
+
+public class ProductService {
+
+}

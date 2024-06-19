@@ -1,0 +1,5 @@
+package com.analytics.model;
+
+public class Metric {
+
+}

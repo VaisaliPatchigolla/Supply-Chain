@@ -1,0 +1,5 @@
+package com.inventory.optimize.service;
+
+public class InventoryOptimizationService {
+
+}

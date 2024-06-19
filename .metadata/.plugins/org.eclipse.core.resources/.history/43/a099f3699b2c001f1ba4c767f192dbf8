@@ -1,0 +1,5 @@
+package com.supplier.repository;
+
+public class SupplierRepository {
+
+}

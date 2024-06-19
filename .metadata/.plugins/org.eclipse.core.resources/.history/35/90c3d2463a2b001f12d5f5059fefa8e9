@@ -1,0 +1,5 @@
+package com.inventory.optimize.feign;
+
+public class DemandForecastClient {
+
+}

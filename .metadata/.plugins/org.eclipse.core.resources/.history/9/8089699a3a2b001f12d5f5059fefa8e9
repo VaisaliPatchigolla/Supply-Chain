@@ -1,0 +1,24 @@
+package com.inventory.optimize.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.inventory.optimize.feign.DemandForecastClient;
+
+@Service
+public class InventoryOptimizationService {
+
+    @Autowired
+    private DemandForecastClient demandForecastClient;
+
+    public String fetchDemandForecast(String productId) {
+        return demandForecastClient.getDemandForecast(productId);
+    }
+
+    public String optimizeInventory() {
+        String productId = "exampleProductId";
+        String forecast = fetchDemandForecast(productId);
+        return "Inventory optimized successfully with forecast: " + forecast;
+    }
+}
+

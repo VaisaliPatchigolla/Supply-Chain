@@ -1,0 +1,5 @@
+package com.analytics.repository;
+
+public class MetricRepository {
+
+}

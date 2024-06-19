@@ -1,0 +1,38 @@
+package com.logistics.controller;
+
+package com.logistics.controller;
+
+import com.example.logistics.dto.InventoryDTO;
+import com.example.logistics.entity.Shipment;
+import com.example.logistics.service.LogisticsService;
+import com.example.logistics.service.ShipmentService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/logistics")
+public class LogisticsController {
+
+    @Autowired
+    private LogisticsService logisticsService;
+
+    @Autowired
+    private ShipmentService shipmentService;
+
+    @GetMapping("/fetch-inventory")
+    public List<InventoryDTO> fetchInventory() {
+        return logisticsService.fetchCurrentInventory();
+    }
+
+    @PostMapping("/track")
+    public Shipment trackShipment(@RequestBody Shipment shipment) {
+        return shipmentService.trackShipment(shipment);
+    }
+
+    @GetMapping("/status")
+    public Shipment getShipmentStatus(@RequestParam long id) {
+        return shipmentService.getShipmentStatus(id);
+    }
+}
